@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainAnchorPane" prefHeight="715.0" prefWidth="600.0" style="-fx-background-image: url('backhround.png'); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.controllers.PanneIndex">
+    <children>
+        <!-- En-tête -->
+        <Text layoutX="200.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des Pannes" style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-fill: white;">
+            <font>
+                <Font name="Arial" size="28.0" />
+            </font>
+        </Text>
+
+        <!-- Champ de recherche -->
+        <TextField fx:id="searchField" layoutX="10.0" layoutY="70.0" prefWidth="580.0" promptText="Recherche..." style="-fx-font-size: 16px; -fx-padding: 10; -fx-background-color: rgba(255, 255, 255, 0.8);" />
+
+        <!-- Conteneur pour les cartes de pannes -->
+        <TilePane fx:id="tilePane" layoutX="10.0" layoutY="120.0" prefColumns="2" style="-fx-padding: 10;" vgap="15" hgap="15" />
+
+        <!-- Bouton d'ajout -->
+        <Button fx:id="ajouterButton" layoutX="10.0" layoutY="660.0" mnemonicParsing="false" onAction="#goToAjouterPanne" text="Ajouter une nouvelle panne" style="-fx-background-color: #28a745; -fx-text-fill: white; -fx-font-size: 16px; -fx-padding: 10;" />
+    </children>
+</AnchorPane>
